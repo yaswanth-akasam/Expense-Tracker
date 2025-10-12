@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#FF81C784</color>
+    <color name="background">#FF121212</color>
+    <color name="category_bills">#FF78909C</color>
+    <color name="category_entertainment">#FFFFB74D</color>
+    <color name="category_food">#FFFF7043</color>
+    <color name="category_health">#FF66BB6A</color>
+    <color name="category_other">#FFA1887F</color>
+    <color name="category_shopping">#FFF06292</color>
+    <color name="category_travel">#FFBA68C8</color>
+    <color name="error">#FFCF6679</color>
+    <color name="primary">#FF64B5F6</color>
+    <color name="primary_dark">#FF1976D2</color>
+    <color name="surface">#FF1E1E1E</color>
+    <color name="warning">#FFFFB74D</color>
+</resources>

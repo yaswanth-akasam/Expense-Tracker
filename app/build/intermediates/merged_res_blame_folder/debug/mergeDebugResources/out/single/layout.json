@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-mergeDebugResources-3:\\layout\\item_expense.xml",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\item_expense.xml"
+    },
+    {
+        "merged": "com.expensetracker.app-mergeDebugResources-3:/layout/fragment_reports.xml",
+        "source": "com.expensetracker.app-main-6:/layout/fragment_reports.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-mergeDebugResources-3:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-mergeDebugResources-3:\\layout\\item_category.xml",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\item_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-mergeDebugResources-3:\\layout\\fragment_reports.xml",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\fragment_reports.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-mergeDebugResources-3:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-mergeDebugResources-3:\\layout\\fragment_categories.xml",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\fragment_categories.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-mergeDebugResources-3:\\layout\\activity_category_expenses.xml",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\activity_category_expenses.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-mergeDebugResources-3:\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-mergeDebugResources-3:\\layout\\activity_add_expense.xml",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\activity_add_expense.xml"
+    }
+]
