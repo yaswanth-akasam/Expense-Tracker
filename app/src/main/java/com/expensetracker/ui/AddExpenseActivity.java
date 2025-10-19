@@ -3,11 +3,11 @@ package com.expensetracker.ui;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.expensetracker.adapter.CategorySpinnerAdapter;
 import com.expensetracker.databinding.ActivityAddExpenseBinding;
 import com.expensetracker.model.Category;
 import com.expensetracker.model.Expense;
@@ -90,14 +90,7 @@ public class AddExpenseActivity extends AppCompatActivity {
 
     private void setupCategorySpinner() {
         if (categories != null && !categories.isEmpty()) {
-            String[] categoryNames = new String[categories.size()];
-            for (int i = 0; i < categories.size(); i++) {
-                categoryNames[i] = categories.get(i).getName();
-            }
-            
-            ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
-                    android.R.layout.simple_spinner_item, categoryNames);
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            CategorySpinnerAdapter adapter = new CategorySpinnerAdapter(this, categories);
             binding.spinnerCategory.setAdapter(adapter);
         }
     }
@@ -151,9 +144,15 @@ public class AddExpenseActivity extends AppCompatActivity {
 
         try {
             double amount = Double.parseDouble(amountStr);
+            
+            if (categories == null || categories.isEmpty()) {
+                Toast.makeText(this, "Categories not loaded yet. Please try again.", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             int categoryPosition = binding.spinnerCategory.getSelectedItemPosition();
             
-            if (categories != null && categoryPosition >= 0 && categoryPosition < categories.size()) {
+            if (categoryPosition >= 0 && categoryPosition < categories.size()) {
                 Category selectedCategory = categories.get(categoryPosition);
                 String note = binding.editTextNote.getText().toString().trim();
                 
@@ -163,6 +162,8 @@ public class AddExpenseActivity extends AppCompatActivity {
                 viewModel.insert(expense);
                 Toast.makeText(this, "Expense saved", Toast.LENGTH_SHORT).show();
                 finish();
+            } else {
+                Toast.makeText(this, "Please select a category", Toast.LENGTH_SHORT).show();
             }
         } catch (NumberFormatException e) {
             Toast.makeText(this, "Please enter a valid amount", Toast.LENGTH_SHORT).show();

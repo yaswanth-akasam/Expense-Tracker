@@ -28,4 +28,16 @@
         app:layout_constraintTop_toBottomOf="@+id/text_categories_title"
         tools:listitem="@layout/item_category" />
 
+    <TextView
+        android:id="@+id/text_empty_state_categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No expenses recorded yet. Add an expense to see your categories here."
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_categories_title" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

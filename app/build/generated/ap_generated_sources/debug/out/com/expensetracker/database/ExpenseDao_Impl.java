@@ -9,12 +9,14 @@ import androidx.room.EntityDeletionOrUpdateAdapter;
 import androidx.room.EntityInsertionAdapter;
 import androidx.room.RoomDatabase;
 import androidx.room.RoomSQLiteQuery;
+import androidx.room.SharedSQLiteStatement;
 import androidx.room.util.CursorUtil;
 import androidx.room.util.DBUtil;
 import androidx.room.util.RelationUtil;
 import androidx.room.util.StringUtil;
 import androidx.sqlite.db.SupportSQLiteStatement;
 import com.expensetracker.model.Category;
+import com.expensetracker.model.CategoryReport;
 import com.expensetracker.model.Expense;
 import com.expensetracker.model.ExpenseWithCategory;
 import java.lang.Class;
@@ -42,6 +44,8 @@ public final class ExpenseDao_Impl implements ExpenseDao {
   private final EntityDeletionOrUpdateAdapter<Expense> __deletionAdapterOfExpense;
 
   private final EntityDeletionOrUpdateAdapter<Expense> __updateAdapterOfExpense;
+
+  private final SharedSQLiteStatement __preparedStmtOfDeleteExpensesByDateRange;
 
   public ExpenseDao_Impl(@NonNull final RoomDatabase __db) {
     this.__db = __db;
@@ -98,6 +102,14 @@ public final class ExpenseDao_Impl implements ExpenseDao {
         statement.bindLong(6, entity.id);
       }
     };
+    this.__preparedStmtOfDeleteExpensesByDateRange = new SharedSQLiteStatement(__db) {
+      @Override
+      @NonNull
+      public String createQuery() {
+        final String _query = "DELETE FROM expenses WHERE date_time BETWEEN ? AND ?";
+        return _query;
+      }
+    };
   }
 
   @Override
@@ -133,6 +145,27 @@ public final class ExpenseDao_Impl implements ExpenseDao {
       __db.setTransactionSuccessful();
     } finally {
       __db.endTransaction();
+    }
+  }
+
+  @Override
+  public void deleteExpensesByDateRange(final long startDate, final long endDate) {
+    __db.assertNotSuspendingTransaction();
+    final SupportSQLiteStatement _stmt = __preparedStmtOfDeleteExpensesByDateRange.acquire();
+    int _argIndex = 1;
+    _stmt.bindLong(_argIndex, startDate);
+    _argIndex = 2;
+    _stmt.bindLong(_argIndex, endDate);
+    try {
+      __db.beginTransaction();
+      try {
+        _stmt.executeUpdateDelete();
+        __db.setTransactionSuccessful();
+      } finally {
+        __db.endTransaction();
+      }
+    } finally {
+      __preparedStmtOfDeleteExpensesByDateRange.release(_stmt);
     }
   }
 
@@ -249,6 +282,58 @@ public final class ExpenseDao_Impl implements ExpenseDao {
             _result = _tmp;
           } else {
             _result = null;
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    });
+  }
+
+  @Override
+  public LiveData<List<CategoryReport>> getCategoryReportsByDateRange(final long startDate,
+      final long endDate) {
+    final String _sql = "SELECT c.name as categoryName, SUM(e.amount) as total, c.color_hex as colorHex FROM expenses e JOIN categories c ON e.category_id = c.id WHERE e.date_time BETWEEN ? AND ? GROUP BY c.name, c.color_hex ORDER BY total DESC";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 2);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, startDate);
+    _argIndex = 2;
+    _statement.bindLong(_argIndex, endDate);
+    return __db.getInvalidationTracker().createLiveData(new String[] {"expenses",
+        "categories"}, false, new Callable<List<CategoryReport>>() {
+      @Override
+      @Nullable
+      public List<CategoryReport> call() throws Exception {
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+        try {
+          final int _cursorIndexOfCategoryName = 0;
+          final int _cursorIndexOfTotal = 1;
+          final int _cursorIndexOfColorHex = 2;
+          final List<CategoryReport> _result = new ArrayList<CategoryReport>(_cursor.getCount());
+          while (_cursor.moveToNext()) {
+            final CategoryReport _item;
+            final String _tmpCategoryName;
+            if (_cursor.isNull(_cursorIndexOfCategoryName)) {
+              _tmpCategoryName = null;
+            } else {
+              _tmpCategoryName = _cursor.getString(_cursorIndexOfCategoryName);
+            }
+            final double _tmpTotal;
+            _tmpTotal = _cursor.getDouble(_cursorIndexOfTotal);
+            final String _tmpColorHex;
+            if (_cursor.isNull(_cursorIndexOfColorHex)) {
+              _tmpColorHex = null;
+            } else {
+              _tmpColorHex = _cursor.getString(_cursorIndexOfColorHex);
+            }
+            _item = new CategoryReport(_tmpCategoryName,_tmpColorHex,_tmpTotal);
+            _result.add(_item);
           }
           return _result;
         } finally {

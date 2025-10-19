@@ -88,9 +88,16 @@ public class CategoryExpensesActivity extends AppCompatActivity {
     private void setupViewModel(int categoryId) {
         viewModel = new ViewModelProvider(this).get(CategoryExpensesViewModel.class);
         viewModel.getExpensesByCategory(categoryId).observe(this, expenses -> {
-            expenseAdapter.setExpenses(expenses);
-            binding.textExpenseCount.setText(expenses.size() + " expenses");
+            if (expenses == null || expenses.isEmpty()) {
+                binding.recyclerViewExpenses.setVisibility(android.view.View.GONE);
+                binding.textEmptyState.setVisibility(android.view.View.VISIBLE);
+            } else {
+                binding.recyclerViewExpenses.setVisibility(android.view.View.VISIBLE);
+                binding.textEmptyState.setVisibility(android.view.View.GONE);
+                expenseAdapter.setExpenses(expenses);
+            }
             
+            binding.textExpenseCount.setText(expenses.size() + " expenses");
             double total = expenses.stream().mapToDouble(e -> e.expense.getAmount()).sum();
             binding.textTotalAmount.setText(CurrencyUtils.formatAmount(CategoryExpensesActivity.this, total));
         });

@@ -203,6 +203,112 @@ public final class CategoryDao_Impl implements CategoryDao {
   }
 
   @Override
+  public List<Category> getAllCategoriesList() {
+    final String _sql = "SELECT * FROM categories ORDER BY name ASC";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    __db.assertNotSuspendingTransaction();
+    final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+    try {
+      final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+      final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
+      final int _cursorIndexOfColorHex = CursorUtil.getColumnIndexOrThrow(_cursor, "color_hex");
+      final int _cursorIndexOfIconName = CursorUtil.getColumnIndexOrThrow(_cursor, "icon_name");
+      final int _cursorIndexOfIsDefault = CursorUtil.getColumnIndexOrThrow(_cursor, "is_default");
+      final List<Category> _result = new ArrayList<Category>(_cursor.getCount());
+      while (_cursor.moveToNext()) {
+        final Category _item;
+        final String _tmpName;
+        if (_cursor.isNull(_cursorIndexOfName)) {
+          _tmpName = null;
+        } else {
+          _tmpName = _cursor.getString(_cursorIndexOfName);
+        }
+        final String _tmpColorHex;
+        if (_cursor.isNull(_cursorIndexOfColorHex)) {
+          _tmpColorHex = null;
+        } else {
+          _tmpColorHex = _cursor.getString(_cursorIndexOfColorHex);
+        }
+        final String _tmpIconName;
+        if (_cursor.isNull(_cursorIndexOfIconName)) {
+          _tmpIconName = null;
+        } else {
+          _tmpIconName = _cursor.getString(_cursorIndexOfIconName);
+        }
+        final boolean _tmpIsDefault;
+        final int _tmp;
+        _tmp = _cursor.getInt(_cursorIndexOfIsDefault);
+        _tmpIsDefault = _tmp != 0;
+        _item = new Category(_tmpName,_tmpColorHex,_tmpIconName,_tmpIsDefault);
+        _item.id = _cursor.getInt(_cursorIndexOfId);
+        _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
+  @Override
+  public LiveData<List<Category>> getCategoriesWithExpenses() {
+    final String _sql = "SELECT DISTINCT c.* FROM categories c JOIN expenses e ON c.id = e.category_id ORDER BY c.name ASC";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    return __db.getInvalidationTracker().createLiveData(new String[] {"categories",
+        "expenses"}, false, new Callable<List<Category>>() {
+      @Override
+      @Nullable
+      public List<Category> call() throws Exception {
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+        try {
+          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+          final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
+          final int _cursorIndexOfColorHex = CursorUtil.getColumnIndexOrThrow(_cursor, "color_hex");
+          final int _cursorIndexOfIconName = CursorUtil.getColumnIndexOrThrow(_cursor, "icon_name");
+          final int _cursorIndexOfIsDefault = CursorUtil.getColumnIndexOrThrow(_cursor, "is_default");
+          final List<Category> _result = new ArrayList<Category>(_cursor.getCount());
+          while (_cursor.moveToNext()) {
+            final Category _item;
+            final String _tmpName;
+            if (_cursor.isNull(_cursorIndexOfName)) {
+              _tmpName = null;
+            } else {
+              _tmpName = _cursor.getString(_cursorIndexOfName);
+            }
+            final String _tmpColorHex;
+            if (_cursor.isNull(_cursorIndexOfColorHex)) {
+              _tmpColorHex = null;
+            } else {
+              _tmpColorHex = _cursor.getString(_cursorIndexOfColorHex);
+            }
+            final String _tmpIconName;
+            if (_cursor.isNull(_cursorIndexOfIconName)) {
+              _tmpIconName = null;
+            } else {
+              _tmpIconName = _cursor.getString(_cursorIndexOfIconName);
+            }
+            final boolean _tmpIsDefault;
+            final int _tmp;
+            _tmp = _cursor.getInt(_cursorIndexOfIsDefault);
+            _tmpIsDefault = _tmp != 0;
+            _item = new Category(_tmpName,_tmpColorHex,_tmpIconName,_tmpIsDefault);
+            _item.id = _cursor.getInt(_cursorIndexOfId);
+            _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    });
+  }
+
+  @Override
   public LiveData<Category> getCategoryById(final int id) {
     final String _sql = "SELECT * FROM categories WHERE id = ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);

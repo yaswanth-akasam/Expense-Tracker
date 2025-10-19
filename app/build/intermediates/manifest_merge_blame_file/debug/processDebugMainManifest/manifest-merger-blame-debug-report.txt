@@ -20,59 +20,59 @@
 15-->[androidx.core:core:1.9.0] C:\Users\akasa\.gradle\caches\8.13\transforms\552f2e1b9fdfd30015801c7c789c05b9\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:4:5-28:19
+17-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:4:5-28:19
 18        android:allowBackup="true"
-18-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:5:9-35
+18-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:5:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.9.0] C:\Users\akasa\.gradle\caches\8.13\transforms\552f2e1b9fdfd30015801c7c789c05b9\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 20        android:debuggable="true"
 21        android:extractNativeLibs="false"
 22        android:icon="@mipmap/ic_launcher"
-22-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:6:9-43
+22-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:6:9-43
 23        android:label="@string/app_name"
-23-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:7:9-41
+23-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:7:9-41
 24        android:roundIcon="@mipmap/ic_launcher_round"
-24-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:8:9-54
+24-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:8:9-54
 25        android:supportsRtl="true"
-25-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:9:9-35
+25-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:9:9-35
 26        android:testOnly="true"
 27        android:theme="@style/Theme.ExpenseTracker" >
-27-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:10:9-52
+27-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:10:9-52
 28        <activity
-28-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:11:9-19:20
+28-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:11:9-19:20
 29            android:name="com.expensetracker.MainActivity"
-29-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:12:13-41
+29-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:12:13-41
 30            android:exported="true"
-30-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:14:13-36
+30-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:14:13-36
 31            android:roundIcon="@mipmap/ic_launcher_round" >
-31-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:13:13-58
+31-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:13:13-58
 32            <intent-filter>
-32-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:15:13-18:29
+32-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:15:13-18:29
 33                <action android:name="android.intent.action.MAIN" />
-33-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:16:17-69
-33-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:16:25-66
+33-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:16:17-69
+33-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:16:25-66
 34
 35                <category android:name="android.intent.category.LAUNCHER" />
-35-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:17:17-77
-35-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:17:27-74
+35-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:17:17-77
+35-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:17:27-74
 36            </intent-filter>
 37        </activity>
 38        <activity
-38-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:20:9-23:58
+38-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:20:9-23:58
 39            android:name="com.expensetracker.ui.AddExpenseActivity"
-39-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:21:13-50
+39-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:21:13-50
 40            android:exported="false"
-40-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:22:13-37
+40-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:22:13-37
 41            android:parentActivityName="com.expensetracker.MainActivity" />
-41-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:23:13-55
+41-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:23:13-55
 42        <activity
-42-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:24:9-27:58
+42-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:24:9-27:58
 43            android:name="com.expensetracker.ui.CategoryExpensesActivity"
-43-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:25:13-56
+43-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:25:13-56
 44            android:exported="false"
-44-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:26:13-37
+44-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:26:13-37
 45            android:parentActivityName="com.expensetracker.MainActivity" />
-45-->C:\ExpenseTracker\app\src\main\AndroidManifest.xml:27:13-55
+45-->C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:27:13-55
 46
 47        <service
 47-->[androidx.room:room-runtime:2.6.1] C:\Users\akasa\.gradle\caches\8.13\transforms\05e46d835bf7bd337837ca3b6a849d37\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63

@@ -1,6 +1,9 @@
 package com.expensetracker.ui.reports;
 
 import android.app.Application;
+import android.content.Context;
+import android.content.SharedPreferences;
+
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -9,55 +12,97 @@ import androidx.lifecycle.Transformations;
 import com.expensetracker.database.ExpenseDatabase;
 import com.expensetracker.database.ExpenseDao;
 import com.expensetracker.model.CategoryReport;
-import com.expensetracker.model.ExpenseWithCategory;
-import com.expensetracker.utils.DateUtils;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Calendar;
 import java.util.List;
-import java.util.Map;
 
-public class ReportsViewModel extends AndroidViewModel {
-    private ExpenseDao expenseDao;
-    private LiveData<Double> monthTotal;
-    private LiveData<List<CategoryReport>> categoryReports;
+public class ReportsViewModel extends AndroidViewModel implements SharedPreferences.OnSharedPreferenceChangeListener {
+    private final ExpenseDao expenseDao;
+    private final SharedPreferences prefs;
+    private final MutableLiveData<Calendar> selectedMonth = new MutableLiveData<>();
+    private final LiveData<Double> monthTotal;
+    private final LiveData<List<CategoryReport>> categoryReports;
+    private final MutableLiveData<Float> budget = new MutableLiveData<>();
 
     public ReportsViewModel(Application application) {
         super(application);
         ExpenseDatabase database = ExpenseDatabase.getDatabase(application);
         expenseDao = database.expenseDao();
-        
-        long[] monthRange = DateUtils.getCurrentMonthRange();
-        monthTotal = expenseDao.getTotalAmountByDateRange(monthRange[0], monthRange[1]);
-        
-        LiveData<List<ExpenseWithCategory>> expenses = expenseDao.getAllExpensesWithCategory();
-        categoryReports = Transformations.map(expenses, this::calculateCategoryReports);
+        prefs = application.getSharedPreferences("ExpenseTrackerPrefs", Context.MODE_PRIVATE);
+        prefs.registerOnSharedPreferenceChangeListener(this);
+
+        selectedMonth.setValue(Calendar.getInstance());
+
+        monthTotal = Transformations.switchMap(selectedMonth, calendar -> {
+            long[] range = getMonthRange(calendar);
+            return expenseDao.getTotalAmountByDateRange(range[0], range[1]);
+        });
+
+        categoryReports = Transformations.switchMap(selectedMonth, calendar -> {
+            long[] range = getMonthRange(calendar);
+            return expenseDao.getCategoryReportsByDateRange(range[0], range[1]);
+        });
+
+        loadBudget();
     }
 
-    private List<CategoryReport> calculateCategoryReports(List<ExpenseWithCategory> expenses) {
-        Map<String, CategoryReport> reportMap = new HashMap<>();
-        
-        for (ExpenseWithCategory expense : expenses) {
-            String categoryName = expense.category.getName();
-            if (!reportMap.containsKey(categoryName)) {
-                reportMap.put(categoryName, new CategoryReport(
-                    categoryName,
-                    expense.category.getColorHex(),
-                    0
-                ));
-            }
-            CategoryReport report = reportMap.get(categoryName);
-            report.total += expense.expense.getAmount();
+    private void loadBudget() {
+        float monthlyBudget = prefs.getFloat("monthly_budget", 1000f);
+        budget.setValue(monthlyBudget);
+    }
+
+    private long[] getMonthRange(Calendar calendar) {
+        Calendar cal = (Calendar) calendar.clone();
+        cal.set(Calendar.DAY_OF_MONTH, 1);
+        long startDate = cal.getTimeInMillis();
+        cal.add(Calendar.MONTH, 1);
+        cal.add(Calendar.DAY_OF_MONTH, -1);
+        long endDate = cal.getTimeInMillis();
+        return new long[]{startDate, endDate};
+    }
+
+    public void nextMonth() {
+        Calendar cal = selectedMonth.getValue();
+        if (cal != null) {
+            cal.add(Calendar.MONTH, 1);
+            selectedMonth.setValue(cal);
         }
-        
-        return new ArrayList<>(reportMap.values());
+    }
+
+    public void prevMonth() {
+        Calendar cal = selectedMonth.getValue();
+        if (cal != null) {
+            cal.add(Calendar.MONTH, -1);
+            selectedMonth.setValue(cal);
+        }
+    }
+
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+        if (key.equals("monthly_budget")) {
+            loadBudget();
+        }
+    }
+
+    @Override
+    protected void onCleared() {
+        super.onCleared();
+        prefs.unregisterOnSharedPreferenceChangeListener(this);
+    }
+
+    public LiveData<Calendar> getSelectedMonth() {
+        return selectedMonth;
+    }
+
+    public LiveData<Double> getMonthTotal() {
+        return monthTotal;
     }
 
     public LiveData<List<CategoryReport>> getCategoryReports() {
         return categoryReports;
     }
 
-    public LiveData<Double> getMonthTotal() {
-        return monthTotal;
+    public LiveData<Float> getBudget() {
+        return budget;
     }
 }

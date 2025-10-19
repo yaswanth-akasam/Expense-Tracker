@@ -29,19 +29,29 @@ public class ReportsFragment extends Fragment {
         binding = FragmentReportsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        binding.textMonth.setText(DateUtils.getCurrentMonthYear());
+        setupListeners();
         observeViewModel();
 
         return root;
     }
 
+    private void setupListeners() {
+        binding.buttonNextMonth.setOnClickListener(v -> reportsViewModel.nextMonth());
+        binding.buttonPrevMonth.setOnClickListener(v -> reportsViewModel.prevMonth());
+    }
+
     private void observeViewModel() {
+        reportsViewModel.getSelectedMonth().observe(getViewLifecycleOwner(), calendar -> {
+            binding.textMonth.setText(DateUtils.getMonthYearFromCalendar(calendar));
+        });
+
         reportsViewModel.getMonthTotal().observe(getViewLifecycleOwner(), total -> {
             if (total != null) {
                 binding.textTotalAmount.setText(CurrencyUtils.formatAmount(getContext(), total));
             } else {
                 binding.textTotalAmount.setText(CurrencyUtils.formatAmount(getContext(), 0));
             }
+            updateBudgetProgress();
         });
 
         reportsViewModel.getCategoryReports().observe(getViewLifecycleOwner(), reports -> {
@@ -53,6 +63,24 @@ public class ReportsFragment extends Fragment {
                 }
             }
         });
+
+        reportsViewModel.getBudget().observe(getViewLifecycleOwner(), budget -> {
+            updateBudgetProgress();
+        });
+    }
+
+    private void updateBudgetProgress() {
+        Double total = reportsViewModel.getMonthTotal().getValue();
+        Float budget = reportsViewModel.getBudget().getValue();
+
+        if (total != null && budget != null && budget > 0) {
+            int progress = (int) ((total / budget) * 100);
+            binding.progressBar.setProgress(progress);
+            binding.textProgress.setText(String.format("%d%%", progress));
+        } else {
+            binding.progressBar.setProgress(0);
+            binding.textProgress.setText("0%");
+        }
     }
 
     private void updatePieChart(List<com.expensetracker.model.CategoryReport> reports) {

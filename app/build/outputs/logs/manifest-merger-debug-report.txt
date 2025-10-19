@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:2:1-30:12
 MERGED from [androidx.databinding:viewbinding:8.13.0] C:\Users\akasa\.gradle\caches\8.13\transforms\433455941a1460a5c83ee65b2382278d\transformed\viewbinding-8.13.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.7.6] C:\Users\akasa\.gradle\caches\8.13\transforms\2956681ab722fa7903c9214a7e4f9271\transformed\navigation-common-2.7.6\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.6] C:\Users\akasa\.gradle\caches\8.13\transforms\8dca8c920c10941d1726586aa3d2bcf6\transformed\navigation-runtime-2.7.6\AndroidManifest.xml:17:1-22:12
@@ -63,16 +63,16 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\akasa\.gradle\caches\8.13\transforms\6635ff5ae2765d3c8bb1e6f03ce6b32a\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\akasa\.gradle\caches\8.13\transforms\2a51bf0252ed3394c8f7cf3a9136c6c0\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 	package
-		INJECTED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml
+		INJECTED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml
+		INJECTED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml
+		INJECTED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:4:5-28:19
-INJECTED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:4:5-28:19
+ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:4:5-28:19
+INJECTED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:4:5-28:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\akasa\.gradle\caches\8.13\transforms\3e2e0b7a374a5de95de6fde4b84807ab\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\akasa\.gradle\caches\8.13\transforms\3e2e0b7a374a5de95de6fde4b84807ab\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\akasa\.gradle\caches\8.13\transforms\87e43435ce33191505b939651d5c3977\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -94,59 +94,59 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\akasa\.g
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\akasa\.gradle\caches\8.13\transforms\d4abcbd69790774a976c2bc3b1513bfd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\akasa\.gradle\caches\8.13\transforms\d4abcbd69790774a976c2bc3b1513bfd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
-		INJECTED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml
+		INJECTED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\akasa\.gradle\caches\8.13\transforms\552f2e1b9fdfd30015801c7c789c05b9\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:9:9-35
 	android:label
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:7:9-41
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:7:9-41
 	android:roundIcon
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:8:9-54
 	android:icon
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:6:9-43
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:6:9-43
 	android:allowBackup
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:5:9-35
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:5:9-35
 	android:theme
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:10:9-52
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:10:9-52
 activity#com.expensetracker.MainActivity
-ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:11:9-19:20
+ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:11:9-19:20
 	android:exported
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:14:13-36
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:14:13-36
 	android:roundIcon
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:13:13-58
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:13:13-58
 	android:name
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:12:13-41
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:12:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:15:13-18:29
+ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:15:13-18:29
 action#android.intent.action.MAIN
-ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:17:17-77
+ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:17:27-74
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:17:27-74
 activity#com.expensetracker.ui.AddExpenseActivity
-ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:20:9-23:58
+ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:20:9-23:58
 	android:parentActivityName
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:23:13-55
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:23:13-55
 	android:exported
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:22:13-37
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:21:13-50
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:21:13-50
 activity#com.expensetracker.ui.CategoryExpensesActivity
-ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:24:9-27:58
+ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:24:9-27:58
 	android:parentActivityName
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:27:13-55
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:27:13-55
 	android:exported
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:26:13-37
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml:25:13-56
+		ADDED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml:25:13-56
 uses-sdk
-INJECTED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml
-INJECTED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml
+INJECTED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml
+INJECTED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:8.13.0] C:\Users\akasa\.gradle\caches\8.13\transforms\433455941a1460a5c83ee65b2382278d\transformed\viewbinding-8.13.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.13.0] C:\Users\akasa\.gradle\caches\8.13\transforms\433455941a1460a5c83ee65b2382278d\transformed\viewbinding-8.13.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.navigation:navigation-common:2.7.6] C:\Users\akasa\.gradle\caches\8.13\transforms\2956681ab722fa7903c9214a7e4f9271\transformed\navigation-common-2.7.6\AndroidManifest.xml:20:5-44
@@ -264,9 +264,9 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\akasa\.gradle\caches\8.13\tran
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\akasa\.gradle\caches\8.13\transforms\2a51bf0252ed3394c8f7cf3a9136c6c0\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\akasa\.gradle\caches\8.13\transforms\2a51bf0252ed3394c8f7cf3a9136c6c0\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
-		INJECTED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml
+		INJECTED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\ExpenseTracker\app\src\main\AndroidManifest.xml
+		INJECTED from C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\AndroidManifest.xml
 service#androidx.room.MultiInstanceInvalidationService
 ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\akasa\.gradle\caches\8.13\transforms\05e46d835bf7bd337837ca3b6a849d37\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
 	android:exported

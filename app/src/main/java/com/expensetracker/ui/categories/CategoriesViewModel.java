@@ -18,7 +18,7 @@ public class CategoriesViewModel extends AndroidViewModel {
         super(application);
         ExpenseDatabase database = ExpenseDatabase.getDatabase(application);
         categoryDao = database.categoryDao();
-        allCategories = categoryDao.getAllCategories();
+        allCategories = categoryDao.getCategoriesWithExpenses();
     }
 
     public LiveData<List<Category>> getAllCategories() {

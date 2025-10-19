@@ -31,6 +31,9 @@ public final class ActivityCategoryExpensesBinding implements ViewBinding {
   public final TextView textCategoryName;
 
   @NonNull
+  public final TextView textEmptyState;
+
+  @NonNull
   public final TextView textExpenseCount;
 
   @NonNull
@@ -38,12 +41,13 @@ public final class ActivityCategoryExpensesBinding implements ViewBinding {
 
   private ActivityCategoryExpensesBinding(@NonNull ConstraintLayout rootView,
       @NonNull LinearLayout categoryHeader, @NonNull RecyclerView recyclerViewExpenses,
-      @NonNull TextView textCategoryName, @NonNull TextView textExpenseCount,
-      @NonNull TextView textTotalAmount) {
+      @NonNull TextView textCategoryName, @NonNull TextView textEmptyState,
+      @NonNull TextView textExpenseCount, @NonNull TextView textTotalAmount) {
     this.rootView = rootView;
     this.categoryHeader = categoryHeader;
     this.recyclerViewExpenses = recyclerViewExpenses;
     this.textCategoryName = textCategoryName;
+    this.textEmptyState = textEmptyState;
     this.textExpenseCount = textExpenseCount;
     this.textTotalAmount = textTotalAmount;
   }
@@ -93,6 +97,12 @@ public final class ActivityCategoryExpensesBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.text_empty_state;
+      TextView textEmptyState = ViewBindings.findChildViewById(rootView, id);
+      if (textEmptyState == null) {
+        break missingId;
+      }
+
       id = R.id.text_expense_count;
       TextView textExpenseCount = ViewBindings.findChildViewById(rootView, id);
       if (textExpenseCount == null) {
@@ -106,7 +116,8 @@ public final class ActivityCategoryExpensesBinding implements ViewBinding {
       }
 
       return new ActivityCategoryExpensesBinding((ConstraintLayout) rootView, categoryHeader,
-          recyclerViewExpenses, textCategoryName, textExpenseCount, textTotalAmount);
+          recyclerViewExpenses, textCategoryName, textEmptyState, textExpenseCount,
+          textTotalAmount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

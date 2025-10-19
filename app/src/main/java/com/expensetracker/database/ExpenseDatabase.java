@@ -42,13 +42,33 @@ public abstract class ExpenseDatabase extends RoomDatabase {
             databaseWriteExecutor.execute(() -> {
                 try {
                     CategoryDao dao = INSTANCE.categoryDao();
+                    
+                    // Default Categories
                     dao.insert(new Category("Food", "#FF5722", "restaurant", true));
                     dao.insert(new Category("Travel", "#9C27B0", "directions_car", true));
                     dao.insert(new Category("Bills", "#607D8B", "receipt", true));
                     dao.insert(new Category("Shopping", "#E91E63", "shopping_cart", true));
                     dao.insert(new Category("Health", "#4CAF50", "local_hospital", true));
                     dao.insert(new Category("Entertainment", "#FF9800", "movie", true));
-                    dao.insert(new Category("Other", "#795548", "category", true));
+
+                    // Additional Categories
+                    dao.insert(new Category("Groceries", "#FFC107", "local_grocery_store", true));
+                    dao.insert(new Category("Transport", "#03A9F4", "commute", true));
+                    dao.insert(new Category("Utilities", "#00BCD4", "power", true));
+                    dao.insert(new Category("Rent", "#8BC34A", "home", true));
+                    dao.insert(new Category("Education", "#795548", "school", true));
+                    dao.insert(new Category("Gifts", "#673AB7", "card_giftcard", true));
+                    dao.insert(new Category("Personal Care", "#F44336", "spa", true));
+                    dao.insert(new Category("Subscriptions", "#2196F3", "subscriptions", true));
+
+                    // New Additional Categories
+                    dao.insert(new Category("Maintenance", "#8D6E63", "build", true));
+                    dao.insert(new Category("Investments", "#42A5F5", "trending_up", true));
+                    dao.insert(new Category("Hobbies", "#7E57C2", "palette", true));
+                    dao.insert(new Category("Kids", "#FF8A65", "child_friendly", true));
+                    dao.insert(new Category("Pets", "#A1887F", "pets", true));
+
+                    dao.insert(new Category("Other", "#9E9E9E", "category", true));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

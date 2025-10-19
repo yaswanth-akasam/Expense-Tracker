@@ -23,7 +23,8 @@
             style="@style/Widget.ExpenseTracker.Card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="16dp"
+            android:background="@color/surface">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -68,7 +69,8 @@
             style="@style/Widget.ExpenseTracker.Card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="16dp"
+            android:background="@color/surface">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -98,7 +100,8 @@
             style="@style/Widget.ExpenseTracker.Card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="16dp"
+            android:background="@color/surface">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -123,7 +126,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Dark Mode"
+                        android.text="Dark Mode"
                         android:textSize="14sp" />
 
                     <com.google.android.material.switchmaterial.SwitchMaterial
@@ -145,6 +148,15 @@
             android:layout_marginTop="24dp"
             android:text="Reset Data"
             android:textColor="@color/error" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:text="Made by yash ❤"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="14sp" />
 
     </LinearLayout>
 

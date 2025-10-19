@@ -38,7 +38,14 @@ public class CategoriesFragment extends Fragment {
 
     private void observeViewModel() {
         categoriesViewModel.getAllCategories().observe(getViewLifecycleOwner(), categories -> {
-            categoryAdapter.setCategories(categories);
+            if (categories == null || categories.isEmpty()) {
+                binding.recyclerViewCategories.setVisibility(View.GONE);
+                binding.textEmptyStateCategories.setVisibility(View.VISIBLE);
+            } else {
+                binding.recyclerViewCategories.setVisibility(View.VISIBLE);
+                binding.textEmptyStateCategories.setVisibility(View.GONE);
+                categoryAdapter.setCategories(categories);
+            }
         });
         
         categoryAdapter.setOnCategoryClickListener(category -> {

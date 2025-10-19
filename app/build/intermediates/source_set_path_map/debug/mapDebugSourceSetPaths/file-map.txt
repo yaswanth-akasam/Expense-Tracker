@@ -1,11 +1,11 @@
-com.expensetracker.app-pngs-0 C:\ExpenseTracker\app\build\generated\res\pngs\debug
-com.expensetracker.app-resValues-1 C:\ExpenseTracker\app\build\generated\res\resValues\debug
-com.expensetracker.app-updated_navigation_xml-2 C:\ExpenseTracker\app\build\generated\updated_navigation_xml\debug
-com.expensetracker.app-packageDebugResources-3 C:\ExpenseTracker\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.expensetracker.app-packageDebugResources-4 C:\ExpenseTracker\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.expensetracker.app-debug-5 C:\ExpenseTracker\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.expensetracker.app-debug-6 C:\ExpenseTracker\app\src\debug\res
-com.expensetracker.app-main-7 C:\ExpenseTracker\app\src\main\res
+com.expensetracker.app-pngs-0 C:\D drive\ExpenseTracker\Expense-Tracker\app\build\generated\res\pngs\debug
+com.expensetracker.app-resValues-1 C:\D drive\ExpenseTracker\Expense-Tracker\app\build\generated\res\resValues\debug
+com.expensetracker.app-updated_navigation_xml-2 C:\D drive\ExpenseTracker\Expense-Tracker\app\build\generated\updated_navigation_xml\debug
+com.expensetracker.app-packageDebugResources-3 C:\D drive\ExpenseTracker\Expense-Tracker\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.expensetracker.app-packageDebugResources-4 C:\D drive\ExpenseTracker\Expense-Tracker\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.expensetracker.app-debug-5 C:\D drive\ExpenseTracker\Expense-Tracker\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.expensetracker.app-debug-6 C:\D drive\ExpenseTracker\Expense-Tracker\app\src\debug\res
+com.expensetracker.app-main-7 C:\D drive\ExpenseTracker\Expense-Tracker\app\src\main\res
 com.expensetracker.app-savedstate-1.2.1-8 C:\Users\akasa\.gradle\caches\8.13\transforms\03c146060e3d4c16a826bfa1f4cbb875\transformed\savedstate-1.2.1\res
 com.expensetracker.app-slidingpanelayout-1.2.0-9 C:\Users\akasa\.gradle\caches\8.13\transforms\0576ffb5c7d90ea82678c1d9b5b3e40a\transformed\slidingpanelayout-1.2.0\res
 com.expensetracker.app-room-runtime-2.6.1-10 C:\Users\akasa\.gradle\caches\8.13\transforms\05e46d835bf7bd337837ca3b6a849d37\transformed\room-runtime-2.6.1\res

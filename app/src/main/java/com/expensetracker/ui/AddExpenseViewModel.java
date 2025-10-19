@@ -3,6 +3,7 @@ package com.expensetracker.ui;
 import android.app.Application;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 
 import com.expensetracker.database.ExpenseDatabase;
 import com.expensetracker.database.ExpenseDao;
@@ -15,14 +16,21 @@ import java.util.List;
 public class AddExpenseViewModel extends AndroidViewModel {
     private ExpenseDao expenseDao;
     private CategoryDao categoryDao;
-    private LiveData<List<Category>> allCategories;
+    private MutableLiveData<List<Category>> allCategories = new MutableLiveData<>();
 
     public AddExpenseViewModel(Application application) {
         super(application);
         ExpenseDatabase database = ExpenseDatabase.getDatabase(application);
         expenseDao = database.expenseDao();
         categoryDao = database.categoryDao();
-        allCategories = categoryDao.getAllCategories();
+        loadAllCategories();
+    }
+
+    private void loadAllCategories() {
+        ExpenseDatabase.databaseWriteExecutor.execute(() -> {
+            List<Category> categories = categoryDao.getAllCategoriesList();
+            allCategories.postValue(categories);
+        });
     }
 
     public LiveData<List<Category>> getAllCategories() {

@@ -10,6 +10,7 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card_budget"
         style="@style/Widget.ExpenseTracker.Card"
+        app:cardBackgroundColor="@color/primary"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,22 +27,24 @@
                 android:id="@+id/text_budget"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
                 android:text="Budget: $1000.00"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textSize="15sp"
+                android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/text_total_spent"
+                android:textColor="@android:color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="$0.00"
-                android:textColor="@color/primary"
-                android:textSize="24sp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/text_remaining"
+                android:textColor="@android:color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"

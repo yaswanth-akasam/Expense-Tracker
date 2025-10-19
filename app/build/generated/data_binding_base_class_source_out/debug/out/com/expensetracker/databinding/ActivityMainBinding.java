@@ -4,7 +4,6 @@ package com.expensetracker.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -30,17 +29,13 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final BottomNavigationView navView;
 
-  @NonNull
-  public final TextView textView;
-
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout container, @NonNull FloatingActionButton fabAddExpense,
-      @NonNull BottomNavigationView navView, @NonNull TextView textView) {
+      @NonNull BottomNavigationView navView) {
     this.rootView = rootView;
     this.container = container;
     this.fabAddExpense = fabAddExpense;
     this.navView = navView;
-    this.textView = textView;
   }
 
   @Override
@@ -84,14 +79,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
-        break missingId;
-      }
-
-      return new ActivityMainBinding((ConstraintLayout) rootView, container, fabAddExpense, navView,
-          textView);
+      return new ActivityMainBinding((ConstraintLayout) rootView, container, fabAddExpense,
+          navView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

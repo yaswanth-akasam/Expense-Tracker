@@ -26,11 +26,16 @@ public final class FragmentCategoriesBinding implements ViewBinding {
   @NonNull
   public final TextView textCategoriesTitle;
 
+  @NonNull
+  public final TextView textEmptyStateCategories;
+
   private FragmentCategoriesBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView recyclerViewCategories, @NonNull TextView textCategoriesTitle) {
+      @NonNull RecyclerView recyclerViewCategories, @NonNull TextView textCategoriesTitle,
+      @NonNull TextView textEmptyStateCategories) {
     this.rootView = rootView;
     this.recyclerViewCategories = recyclerViewCategories;
     this.textCategoriesTitle = textCategoriesTitle;
+    this.textEmptyStateCategories = textEmptyStateCategories;
   }
 
   @Override
@@ -72,8 +77,14 @@ public final class FragmentCategoriesBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.text_empty_state_categories;
+      TextView textEmptyStateCategories = ViewBindings.findChildViewById(rootView, id);
+      if (textEmptyStateCategories == null) {
+        break missingId;
+      }
+
       return new FragmentCategoriesBinding((ConstraintLayout) rootView, recyclerViewCategories,
-          textCategoriesTitle);
+          textCategoriesTitle, textEmptyStateCategories);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

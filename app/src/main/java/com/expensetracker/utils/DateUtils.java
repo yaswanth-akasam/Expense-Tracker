@@ -61,4 +61,9 @@ public class DateUtils {
         SimpleDateFormat monthYearFormat = new SimpleDateFormat("MMMM yyyy", Locale.getDefault());
         return monthYearFormat.format(new Date());
     }
+
+    public static String getMonthYearFromCalendar(Calendar calendar) {
+        SimpleDateFormat monthYearFormat = new SimpleDateFormat("MMMM yyyy", Locale.getDefault());
+        return monthYearFormat.format(calendar.getTime());
+    }
 }

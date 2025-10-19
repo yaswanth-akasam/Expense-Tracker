@@ -4,7 +4,9 @@ package com.expensetracker.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -22,24 +24,41 @@ public final class FragmentReportsBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
+  public final ImageButton buttonNextMonth;
+
+  @NonNull
+  public final ImageButton buttonPrevMonth;
+
+  @NonNull
   public final LinearLayout layoutCategories;
 
   @NonNull
   public final PieChartView pieChart;
 
   @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
   public final TextView textMonth;
+
+  @NonNull
+  public final TextView textProgress;
 
   @NonNull
   public final TextView textTotalAmount;
 
-  private FragmentReportsBinding(@NonNull ScrollView rootView,
-      @NonNull LinearLayout layoutCategories, @NonNull PieChartView pieChart,
-      @NonNull TextView textMonth, @NonNull TextView textTotalAmount) {
+  private FragmentReportsBinding(@NonNull ScrollView rootView, @NonNull ImageButton buttonNextMonth,
+      @NonNull ImageButton buttonPrevMonth, @NonNull LinearLayout layoutCategories,
+      @NonNull PieChartView pieChart, @NonNull ProgressBar progressBar, @NonNull TextView textMonth,
+      @NonNull TextView textProgress, @NonNull TextView textTotalAmount) {
     this.rootView = rootView;
+    this.buttonNextMonth = buttonNextMonth;
+    this.buttonPrevMonth = buttonPrevMonth;
     this.layoutCategories = layoutCategories;
     this.pieChart = pieChart;
+    this.progressBar = progressBar;
     this.textMonth = textMonth;
+    this.textProgress = textProgress;
     this.textTotalAmount = textTotalAmount;
   }
 
@@ -70,6 +89,18 @@ public final class FragmentReportsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.button_next_month;
+      ImageButton buttonNextMonth = ViewBindings.findChildViewById(rootView, id);
+      if (buttonNextMonth == null) {
+        break missingId;
+      }
+
+      id = R.id.button_prev_month;
+      ImageButton buttonPrevMonth = ViewBindings.findChildViewById(rootView, id);
+      if (buttonPrevMonth == null) {
+        break missingId;
+      }
+
       id = R.id.layout_categories;
       LinearLayout layoutCategories = ViewBindings.findChildViewById(rootView, id);
       if (layoutCategories == null) {
@@ -82,9 +113,21 @@ public final class FragmentReportsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progress_bar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
       id = R.id.text_month;
       TextView textMonth = ViewBindings.findChildViewById(rootView, id);
       if (textMonth == null) {
+        break missingId;
+      }
+
+      id = R.id.text_progress;
+      TextView textProgress = ViewBindings.findChildViewById(rootView, id);
+      if (textProgress == null) {
         break missingId;
       }
 
@@ -94,8 +137,8 @@ public final class FragmentReportsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentReportsBinding((ScrollView) rootView, layoutCategories, pieChart,
-          textMonth, textTotalAmount);
+      return new FragmentReportsBinding((ScrollView) rootView, buttonNextMonth, buttonPrevMonth,
+          layoutCategories, pieChart, progressBar, textMonth, textProgress, textTotalAmount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

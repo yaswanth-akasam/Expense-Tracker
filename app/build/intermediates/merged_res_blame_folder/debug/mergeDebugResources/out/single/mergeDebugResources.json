@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_groceries.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_groceries.xml"
+    },
+    {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
@@ -8,8 +12,24 @@
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
     },
     {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_directions_car.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_directions_car.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_child_friendly.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_child_friendly.xml"
+    },
+    {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_add.xml.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\font_roboto_bold.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\font\\roboto_bold.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_edit.xml"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_home.xml.flat",
@@ -18,10 +38,6 @@
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\mipmap-xxhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_edit.xml.flat",
-        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_edit.xml"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\mipmap-hdpi_ic_launcher.webp.flat",
@@ -36,40 +52,88 @@
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\item_expense.xml"
     },
     {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_local_hospital.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_local_hospital.xml"
+    },
+    {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_delete.xml.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_flag_gbp.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_flag_gbp.xml"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_shopping_cart.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_shopping_cart.xml"
+    },
+    {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_education.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_education.xml"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\xml\\data_extraction_rules.xml"
     },
     {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_circular_shape.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\circular_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_card_giftcard.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_card_giftcard.xml"
+    },
+    {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_palette.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_palette.xml"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\layout_activity_category_expenses.xml.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\activity_category_expenses.xml"
     },
     {
-        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_health.xml.flat",
-        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_health.xml"
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_flag_usd.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_flag_usd.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_flag_inr.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_flag_inr.xml"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_category.xml.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_category.xml"
     },
     {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_health.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_health.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_build.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_build.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_power.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_power.xml"
+    },
+    {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_chart.xml.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_chart.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\layout_spinner_item_with_icon.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\spinner_item_with_icon.xml"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\mipmap-mdpi_ic_launcher.webp.flat",
@@ -80,16 +144,28 @@
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_travel.xml"
     },
     {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_flag_eur.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_flag_eur.xml"
+    },
+    {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_bottom_nav_item_background.xml.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\bottom_nav_item_background.xml"
     },
     {
-        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\layout_fragment_categories.xml.flat",
-        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\fragment_categories.xml"
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_restaurant.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_restaurant.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_rent.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_rent.xml"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\layout_fragment_categories.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\fragment_categories.xml"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
@@ -98,6 +174,14 @@
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_food.xml.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_food.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_movie.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_movie.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_gifts.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_gifts.xml"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
@@ -112,8 +196,28 @@
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "com.expensetracker.app-debug-4:/layout_activity_main.xml.flat",
+        "source": "com.expensetracker.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\font_roboto_medium.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\font\\roboto_medium.xml"
+    },
+    {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\layout_fragment_reports.xml.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\fragment_reports.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_personal_care.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_personal_care.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\layout_spinner_item_with_flag.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\spinner_item_with_flag.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_local_grocery_store.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_local_grocery_store.xml"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -124,12 +228,28 @@
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
     },
     {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_chevron_right.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_chevron_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_school.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_school.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_subscriptions.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_subscriptions.xml"
+    },
+    {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_entertainment.xml.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_entertainment.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_commute.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_commute.xml"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\xml_backup_rules.xml.flat",
@@ -148,12 +268,24 @@
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\item_category.xml"
     },
     {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_pets.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_pets.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_trending_up.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_trending_up.xml"
+    },
+    {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\layout_activity_add_expense.xml.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\activity_add_expense.xml"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\menu_bottom_nav_menu.xml.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_utilities.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_utilities.xml"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_shopping.xml.flat",
@@ -164,28 +296,48 @@
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\mipmap-mdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_settings.xml.flat",
-        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_settings.xml"
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_transport.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_transport.xml"
     },
     {
-        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\layout_fragment_settings.xml.flat",
-        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\fragment_settings.xml"
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_settings.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_settings.xml"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\layout_fragment_home.xml.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\fragment_home.xml"
     },
     {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_chevron_left.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_chevron_left.xml"
+    },
+    {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_editing.png.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\editing.png"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.expensetracker.app-debug-4:/layout_fragment_reports.xml.flat",
-        "source": "com.expensetracker.app-main-6:/layout/fragment_reports.xml"
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_spa.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_spa.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_receipt.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\ic_receipt.xml"
+    },
+    {
+        "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_circular_progress_bar.xml.flat",
+        "source": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-main-6:\\drawable\\circular_progress_bar.xml"
     },
     {
         "merged": "C:\\Users\\akasa\\.gradle\\daemon\\8.13\\com.expensetracker.app-debug-4:\\drawable_ic_launcher_foreground.xml.flat",

@@ -114,20 +114,26 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layout_note"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="@string/note"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_selected_date">
+        app:layout_constraintTop_toBottomOf="@+id/text_selected_date"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_note"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textMultiLine"
-            android:maxLines="3" />
+            android:gravity="top"
+            android:inputType="textMultiLine|textCapSentences"
+            android:lines="3" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -145,7 +151,7 @@
 
     <Button
         android:id="@+id/button_cancel"
-        style="@style/Widget.Material3.Button.OutlinedButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
 
         android:layout_width="0dp"
         android:layout_height="48dp"
@@ -153,7 +159,6 @@
         android:layout_marginTop="32dp"
         android:text="@string/cancel"
         android:textAlignment="gravity"
-        android:textAppearance="@style/CardView.Dark"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
